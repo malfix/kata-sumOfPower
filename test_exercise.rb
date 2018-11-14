@@ -13,4 +13,7 @@ class TestExercise < Test::Unit::TestCase
   test 'case 1' do
     assert_equal 1, Exercise.new.find(16) # 3^2 + 2^2
   end
+  test 'find canditates works' do
+    assert_equal [1, 4, 9, 16], Exercise.new.find_squares(17)
+  end
 end
